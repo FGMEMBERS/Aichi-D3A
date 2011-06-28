@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <status>devel</status>
+    <author>BARANGER Emmanuel</author>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/Aichi-D3A/Sounds/val-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Aichi-D3A/Models/val.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+      <splash-texture>Aircraft/Aichi-D3A/val-splash.png</splash-texture>
+    </startup>
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Aichia-D3A/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                      <!-- 0 immat -->
+        <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
+        <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
+        <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
+        <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
+        <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
+        <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
+        <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
+        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
+        <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
+        <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
+        <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 11 altitude for MP shadow -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>  
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Aichia D3A</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canpy</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Guns fire</desc>
+      </key>
+      <key>
+        <name>E</name>
+        <desc>Open/Close wings</desc>
+      </key>
+      <key>
+        <name>Ctrl e</name>
+        <desc>Drop Torpedo</desc>
+      </key>
+      <key>
+        <name>o/O</name>
+        <desc>Hook up/down</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/val-menu.xml"/>
+
+  </sim>
+
+  <surface-positions>
+    <wing-fold-pos-norm alias="/instrumentation/doors/wings/position-norm" />
+  </surface-positions>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <running>true</running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <running>true</running>
+    </engine>
+  </engines>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">2070</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <input>
+    <keyboard include="Nasal/val-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Aichi-D3A/Nasal/doors.nas</file>
+    </doors>
+    <val>
+      <file>Aircraft/Aichi-D3A/Nasal/liveries.nas</file>
+      <file>Aircraft/Aichi-D3A/Nasal/light.nas</file>
+    </val>
+    <guns>
+      <file>Aircraft/Aichi-D3A/Nasal/weapons.nas</file>
+      <file>Aircraft/Aichi-D3A/Nasal/revi.nas</file>
+    </guns>
+  </nasal>
+
+</PropertyList>
+
