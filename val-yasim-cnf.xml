@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+************************************************************************
+Aichi D3A FDM YASim
+BARANGER Emmanuel                                                   2010
+************************************************************************
+-->
+
+<PropertyList include="val-base.xml">
+
+  <sim>
+    <description>Aichi D3A (Yasim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>val-yasim</aero>
+  </sim>
+
+</PropertyList>
