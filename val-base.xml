@@ -27,7 +27,7 @@
 
     <submodels> 
       <serviceable type="bool">true</serviceable>
-      <path>Aircraft/Aichia-D3A/Models/Effects/guns/submodels.xml</path>
+      <path>Aircraft/Aichi-D3A/Models/Effects/guns/submodels.xml</path>
     </submodels>
 
     <multiplay>
@@ -51,7 +51,7 @@
     </multiplay>
 
     <help>
-      <title>Aichia D3A</title>
+      <title>Aichi D3A</title>
       <key>
         <name>d</name>
         <desc>Open/Close canpy</desc>
