@@ -22,7 +22,8 @@
     </model>
 
     <startup>
-      <splash-texture>Aircraft/Aichi-D3A/val-splash.png</splash-texture>
+      <splash-texture>Aircraft/Aichi-D3A/Splash/val-splash.png</splash-texture>
+	  <splash-texture>Aircraft/Aichi-D3A/Splash/val-splash1.png</splash-texture>
     </startup>
 
     <submodels> 
