@@ -13,6 +13,17 @@ BARANGER Emmanuel                                                   2010
     <description>Aichi D3A (Yasim)</description>
     <flight-model>yasim</flight-model>
     <aero>val-yasim</aero>
+
+    <tags>
+      <tag>aichi</tag>
+      <tag>low-wing</tag>
+      <tag>tail-dragger</tag>
+      <tag>fixed-gear</tag>
+      <tag>single-engine</tag>
+      <tag>piston</tag>
+      <tag>ww2</tag>
+      <tag>bomber</tag>
+    </tags>
   </sim>
 
 </PropertyList>
